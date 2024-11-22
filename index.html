@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Profesyonel Hız Testi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="speed-test-container">
+        <h1>İnternet Hız Testi</h1>
+        <div class="speedometer">
+            <div class="needle" id="speedNeedle"></div>
+        </div>
+        <div id="status">Testi başlatmak için butona tıklayın</div>
+        <button id="startTest">
+            <i class="fas fa-bolt"></i> Testi Başlat
+        </button>
+        <div class="result-grid" id="results">
+            <div class="result-item">
+                <h3>İndirme Hızı</h3>
+                <div id="downloadSpeed">-</div>
+            </div>
+            <div class="result-item">
+                <h3>Yükleme Hızı</h3>
+                <div id="uploadSpeed">-</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

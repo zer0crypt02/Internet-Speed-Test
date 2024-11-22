@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.speed-test-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+.speedometer {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+}
+.needle {
+    position: absolute;
+    width: 2px;
+    height: 120px;
+    background: #fff;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transition: transform 0.5s ease;
+}
+#startTest {
+    background: #3498db;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+#startTest:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+.result-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+.result-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+#status {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #bdc3c7;
+}
